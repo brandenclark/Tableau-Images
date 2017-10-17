@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<div id = "jim"></div>
+	
+    	<script type="text/javascript">
+    		var logoPath = /\d+\.\w{3}/.exec(document.URL);
+    		var ob = document.getElementById("jim");
+    		var logoPath = "<img src=\"https://marriottschool.byu.edu/upload/data/org/logo/" + logoPath + "\">";
+    		ob.innerHTML = logoPath;
+    	</script>
+	</body>
+</html>
