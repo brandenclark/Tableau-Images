@@ -1,4 +1,4 @@
-<html><body><!--This page is the automated JS dictionary to present images dynamically in our Tableau Company Profile Dashboard.--><div id = "jim"></div><script type="text/javascript">function getPath(arPath,logoPath){for(var i=0;i<arPath.length;i++){if(arPath[i].name === logoPath){return arPath[i].path;}}} var arPath = [ 
+<html><body><div id = "jim"></div><!--This page is the automated JS dictionary to present images dynamically in our Tableau Company Profile Dashboard.--><script type="text/javascript">function getPath(arPath,logoPath){for(var i=0;i<arPath.length;i++){if(arPath[i].name === logoPath){return arPath[i].path;}}} var arPath = [ 
 {name:"-", path: "empty"},
 {name:"@Home Realty Network", path: "empty"},
 {name:"#1 Paintball Corporation", path: "empty"},
@@ -9119,4 +9119,4 @@
 {name:"Zylun Staffing", path: "empty"},
 {name:"Zyto, Corp.", path: "empty"},
 {name:"ZZZ Pawn Shop", path: "empty"},
-{name: 'branden', path: 'empty'}]; var logoPath = document.URL.slice(document.URL.indexOf("?") + 1);var ob = document.getElementById("jim");logoPath = decodeURIComponent(logoPath);var logoPath = getPath(arPath,logoPath);var logoPath = "<img src=\"https://marriottschool.byu.edu/upload/data/org/logo/" + logoPath + "\">";ob.innerHTML = logoPath;</script></body></html> 
+{name: 'branden', path: 'empty'}];var logoPath = document.URL.slice(document.URL.indexOf("?") + 1);var ob = document.getElementById("jim");logoPath = decodeURIComponent(logoPath);logoPath = getPath(arPath,logoPath);logoPath = (logoPath == "empty") ? "<img src=\"https://marriottschool.byu.edu/studentboard/img/building.svg\">" : "<img src=\"https://marriottschool.byu.edu/upload/data/org/logo/" + logoPath + "\">";ob.innerHTML = logoPath;</script></body></html> 
