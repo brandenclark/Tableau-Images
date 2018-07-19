@@ -1,0 +1,6 @@
+echo off
+title Tableau JS Dictionary
+echo ^<html^>^<body^>^<div id = "jim"^>^</div^>^<script type="text/javascript"^>function getPath(arPath,logoPath){for(var i=0;i^<arPath.length;i++){if(arPath[i].name === logoPath){return arPath[i].path;}}} var arPath = [ > c:/users/bcc-infosystems/desktop/juliet.html
+cd \program files\mysql\mysql workbench 6.3 ce
+mysql -h <DATABASE> URL -u <USERNAME> -s -N -e"USE msmdatabase; SELECT CASE WHEN logo_path = '' THEN concat('{name:\"', organization_name, '\", path: \"empty\"},') ELSE concat('{name:\"', organization_name, '\", path: \"', logo_path,'\"},') END AS js FROM ref_organization_view;" -p"<PASSWORD>" >> c:/users/bcc-infosystems/desktop/juliet.html
+echo {name: 'branden', path: 'empty'}]; var logoPath = document.URL.slice(document.URL.indexOf("?") + 1);var ob = document.getElementById("jim");logoPath = decodeURIComponent(logoPath);var logoPath = getPath(arPath,logoPath);var logoPath = "<img src=\"https://marriottschool.byu.edu/upload/data/org/logo/" + logoPath + "\">";ob.innerHTML = logoPath;^</script^>^</body^>^</html^> >> c:/users/bcc-infosystems/desktop/juliet.html
